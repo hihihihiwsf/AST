@@ -11,7 +11,6 @@ from torch.autograd import Variable
 from torch.utils.data.sampler import RandomSampler
 from tqdm import tqdm
 import json
-from IPython import embed
 
 
 import utils

@@ -11,7 +11,6 @@ import utils
 import logging
 from torch.autograd import grad
 
-from IPython import embed
 import warnings
 warnings.filterwarnings("ignore")
 
@@ -96,7 +95,7 @@ class Embedding(nn.Module):
             output = torch.cat((x, onehot_embed), dim=-1)
             output = self.embed2(self.embed1(output))
         except:
-            embed()
+            pass
         return output
         
 class Generator(nn.Module):
@@ -187,7 +186,7 @@ class SublayerConnection(nn.Module):
     """
     def __init__(self, size, dropout):
         super(SublayerConnection, self).__init__()
-        self.norm = LayerNorm(size)
+        self.norm = nn.LayerNorm(size)
         self.dropout = nn.Dropout(dropout)
 
     def forward(self, x, sublayer):
@@ -213,7 +212,7 @@ class EntmaxAlphaBencher(object):
     def __enter__(self):
         self.X = self.X_data.clone().requires_grad_()
         self.dY = torch.randn_like(self.X)
-        self.alpha = alpha
+        self.alpha = self.alpha
         return self
 
     def forward(self):
@@ -245,7 +244,7 @@ def attention(query, key, value, params, mask=None, dropout=None, alpha=None):
         try:
             scores = scores.masked_fill(mask == 0, -1e9)
         except:
-            embed()
+            pass
 
     if params.attn_type=='softmax':
         p_attn = F.softmax(scores, dim = -1)

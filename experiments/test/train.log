@@ -1,0 +1,13 @@
+[02:29:43] Transformer.Train: Loading the datasets...
+[02:29:43] Transformer.Data: train_len: 126556
+[02:29:43] Transformer.Data: building datasets from data/elect...
+[02:29:43] Transformer.Data: valid_len: 2590
+[02:29:43] Transformer.Data: building datasets from data/elect...
+[02:29:43] Transformer.Data: test_len: 2590
+[02:29:43] Transformer.Data: building datasets from data/elect...
+[02:29:43] Transformer.Train: Loading complete.
+[02:29:43] Transformer.Train: Starting training for 4 epoch(s)
+[02:29:43] Transformer.Train: begin training and evaluation
+[02:29:43] Transformer.Train: My Transformer have 68298 paramerters in total
+[02:29:43] Transformer.Train: Epoch 1/4
+[02:29:48] Transformer.Train: G_loss: 7.213786443074544 ; D_loss: 0.6881847381591797

@@ -1,4 +1,3 @@
-from IPython import embed
 import matplotlib.pyplot as plt
 import argparse
 import logging
@@ -12,7 +11,7 @@ from tqdm import tqdm
 
 import utils
 #import model.net as net
-import model.gan_transformer as transformer
+import gan_transformer as transformer
 from dataloader import *
 
 import matplotlib

@@ -4,15 +4,12 @@ from __future__ import print_function
 
 import os
 from datetime import datetime, timedelta
-from chinese_calendar import is_workday, is_holiday
-from sklearn.preprocessing import OneHotEncoder
 import pandas as pd
 import math
 import numpy as np
 import random
 from tqdm import trange
 
-from IPython import embed
 from io import BytesIO
 from urllib.request import urlopen
 from zipfile import ZipFile
@@ -114,7 +111,7 @@ if __name__ == '__main__':
     if not os.path.exists(save_path):
         os.makedirs(save_path)
     
-    csv_path = '/home/wusifan/backup/wusifan/universal_transformer/data/elect72/LD2011_2014.txt'
+    csv_path = 'data/elect/LD2011_2014.txt'
     
     if not os.path.exists(csv_path):
         zipurl = 'https://archive.ics.uci.edu/ml/machine-learning-databases/00321/LD2011_2014.txt.zip'
