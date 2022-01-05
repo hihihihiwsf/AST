@@ -15,11 +15,10 @@ matplotlib.use('Agg')
 
 #matplotlib.rcParams['savefig.dpi'] = 300 #Uncomment for higher plot resolutions
 import matplotlib.pyplot as plt
-from IPython import embed
 
 import seaborn as sns
 
-import model.gan_transformer as transformer 
+import gan_transformer as transformer 
 
 logger = logging.getLogger('Transformer.Utils')
 

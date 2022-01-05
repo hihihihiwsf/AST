@@ -1,0 +1,23 @@
+{
+    "d_model": 24,
+    "h": 8,
+    "attn_type": "entmax15",
+    "d_ff": 16,
+    "dropout": 0.3,
+    "num_class": 2000,
+    "embedding_dim": 20,
+    "cov_dim": 16,
+    "N": 3,
+    "predict_steps": 24,
+    "train_window": 192,
+    "batch_size": 64,
+    "predict_batch": 64,
+    "num_epochs": 4,
+    "lr_d": 0.0001,
+    "lr": 6.25e-5,
+    "lr_schedule": "warmup_cosine",
+    "lr_warmup": 0.002,
+    "predict_start": 168,
+    "gan": true,
+    "test_predict_start": 168
+}

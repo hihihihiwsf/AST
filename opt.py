@@ -5,7 +5,7 @@ from torch.nn.utils import clip_grad_norm_
 
 def warmup_cosine(x, warmup=0.002):
     s = 1 if x <= warmup else 0
-    return s*(x/warmup) + (1-s)*(0.5 * (1 + torch.cos(math.pi * x)))
+    return s*(x/warmup) + (1-s)*(0.5 * (1 + math.cos(math.pi * x)))
 
 def warmup_constant(x, warmup=0.002):
     s = 1 if x <= warmup else 0

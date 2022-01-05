@@ -4,7 +4,6 @@ import torch
 import os
 import logging
 from torch.utils.data import DataLoader, Dataset, Sampler
-from IPython import embed
 
 logger = logging.getLogger('Transformer.Data')
 
